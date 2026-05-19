@@ -1,0 +1,12 @@
+[
+    {
+        "amount": 200.0,
+        "category": "Food",
+        "description": "given to maid"
+    },
+    {
+        "amount": 4500.0,
+        "category": "Rent",
+        "description": "Room"
+    }
+]

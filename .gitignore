@@ -1,0 +1,28 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+*.sqlite3
+*.db
+instance/
+*.log
+*.pot
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Ignore user data files
+user_registry.json
+user_*_todo_dashboard.json
+user_*_notes_dashboard.json
+user_*_expense_dashboard.json
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore local secrets
+config_dashboard.json
+
