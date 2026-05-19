@@ -46,6 +46,11 @@ def save_data(filename, data):
         json.dump(data, f, indent=4)
 
 def get_config():
+    # Prefer environment variable for production deployments (e.g., Render)
+    env_key = os.environ.get("AI_API_KEY")
+    if env_key is not None and env_key.strip() != "":
+        return {"api_key": env_key}
+
     if os.path.exists(CONFIG_FILE):
         with open(CONFIG_FILE, "r") as f:
             try: return json.load(f)
