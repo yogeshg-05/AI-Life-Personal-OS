@@ -5,8 +5,8 @@ from threading import Timer
 from flask import Flask, render_template_string, request, jsonify, session
 
 app = Flask(__name__)
-# Added a secure secret key to handle multi-user session tokens safely
-app.secret_key = "multi_user_secure_os_token_2026"
+# Use SECRET_KEY from environment when available (safer for production)
+app.secret_key = os.environ.get("SECRET_KEY", "multi_user_secure_os_token_2026")
 
 USER_DATABASE_FILE = "user_registry.json"
 CONFIG_FILE = "config_dashboard.json"
