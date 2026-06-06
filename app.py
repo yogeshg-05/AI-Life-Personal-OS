@@ -1087,9 +1087,13 @@ def external_utility():
         except Exception as e:
             return jsonify({"result": f"❌ <strong>Gemini Interface Error:</strong> {str(e)}"})
 
-def launch_chrome():
-    webbrowser.open("http://127.0.0.1:5010/")
+# Timer(1, launch_chrome).start()
+# webbrowser.open(...)
 
-if __name__ == '__main__':
-    Timer(1, launch_chrome).start()
-    app.run(port=5010, debug=False)
+import os
+
+if __name__ == "__main__":
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5010))
+    )
