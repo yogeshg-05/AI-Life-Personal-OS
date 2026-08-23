@@ -1,63 +1,61 @@
-# AI Life Personal OS
+# 🧠 AI Life Personal OS
 
-This is a personal productivity dashboard with tasks, expenses, notes, and an AI integration.
+> **Your personal productivity dashboard powered by AI.**
 
-## Local run
-1. Create virtualenv and install dependencies:
+AI Life Personal OS brings **tasks, expenses, notes, files, and AI tools** into one simple workspace.
+
+## ✨ Features
+
+* ✅ **Task Manager** — Organize daily work and priorities
+* 💰 **Expense Tracker** — Record and monitor spending
+* 📝 **Notes** — Keep important information organized
+* 🤖 **AI Integration** — AI-powered productivity features
+* 📊 **Personal Dashboard** — Manage everything from one place
+
+## 🛠️ Tech Stack
+
+**Python · Flask · HTML · CSS · JavaScript · AI APIs · JSON**
+
+## 🚀 Run Locally
 
 ```bash
+git clone https://github.com/<your-username>/ai-life-personal-os.git
+cd ai-life-personal-os
+
 python -m venv .venv
 .venv\Scripts\activate
+
 pip install -r requirements.txt
-```
-
-2. Run locally:
-
-```bash
 python app.py
 ```
 
-The app runs on http://127.0.0.1:5010 by default.
+Open **http://127.0.0.1:5010**
 
-## Prepare GitHub repository and push
-1. Initialize git and commit:
+## 🌐 Deployment
 
-```bash
-git init
-git add .
-git commit -m "Initial import: AI Life Personal OS"
-```
-
-2. Create a GitHub repository (web or using GitHub CLI) and push:
-
-Using GitHub CLI (`gh`):
+Supports deployment on **Render** using:
 
 ```bash
-gh repo create <your-username>/ai-life-personal-os --public --source=. --remote=origin --push
+pip install -r requirements.txt
+gunicorn app:app --bind 0.0.0.0:$PORT
 ```
 
-Or create repo on github.com, then:
+## 🔐 Security
 
-```bash
-git remote add origin https://github.com/<your-username>/ai-life-personal-os.git
-git branch -M main
-git push -u origin main
-```
+Never commit API keys or secrets to GitHub. Use environment variables for sensitive credentials.
 
-## Deploy to Render
-1. Go to https://render.com and sign in.
-2. Click "New" → "Web Service" → "Connect a repository" and choose the GitHub repository you just pushed.
-3. For the service settings use:
-   - Environment: `Python`
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn app:app --bind 0.0.0.0:$PORT`
-   - Branch: `main`
-4. Optionally, add an environment variable `FLASK_ENV=production`.
+## 🚧 Future Plans
 
-Alternatively you can import `render.yaml` from the repo when creating a new service.
+* 🔐 Secure authentication
+* 🗄️ Database integration
+* 📈 Expense analytics
+* 🧠 Smarter AI assistant
+* 📅 Calendar & reminders
+* 📱 Mobile-friendly experience
 
-## Notes & Security
-- `config_dashboard.json` contains API keys for AI access; keep it private. The file is included in `.gitignore` by default.
-- The app stores user files like `user_registry.json` and per-user dashboards locally; consider migrating to a proper database for production.
+## 👨‍💻 Author
 
-If you want, I can initialize a local git repo here and prepare the first commit. I can also provide the exact `gh` commands to create the GitHub repo and attempt to create it if you provide GitHub access (token or `gh` CLI logged in).
+**Yogesh Gate**
+B.Tech CSE @ NMIET, Pune
+
+**Build. Organize. Automate. 🚀**
