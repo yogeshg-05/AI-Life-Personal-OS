@@ -1,6 +1,6 @@
 # AI Life Personal OS
 
-This is a Flask-based personal productivity dashboard with tasks, expenses, notes, and an AI integration.
+This is a personal productivity dashboard with tasks, expenses, notes, and an AI integration.
 
 ## Local run
 1. Create virtualenv and install dependencies:
