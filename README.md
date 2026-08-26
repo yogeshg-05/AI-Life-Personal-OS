@@ -4,7 +4,7 @@
 
 AI Life Personal OS brings **tasks, expenses, notes, files, and AI tools** into one simple workspace.
 
-## ✨ Features
+## ✨ Features :
 
 * ✅ **Task Manager** — Organize daily work and priorities
 * 💰 **Expense Tracker** — Record and monitor spending
@@ -12,7 +12,7 @@ AI Life Personal OS brings **tasks, expenses, notes, files, and AI tools** into 
 * 🤖 **AI Integration** — AI-powered productivity features
 * 📊 **Personal Dashboard** — Manage everything from one place
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack :
 
 **Python · Flask · HTML · CSS · JavaScript · AI APIs · JSON**
 
